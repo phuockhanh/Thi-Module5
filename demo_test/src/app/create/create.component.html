@@ -1,0 +1,32 @@
+<form [formGroup]="form" (ngSubmit)="submit()" >
+  <div class="form-group">
+    <label for="name">Book Id</label>
+    <input type="text" class="form-control" formControlName='id' id="id" placeholder="Input Id">
+    <span class="text-danger" *ngIf="form?.controls?.id?.dirty && form && form?.controls?.id?.errors">
+      {{ form?.controls?.id?.errors?.required ? "This field is required" : "Name must less or equals than 30" }}
+    </span>
+  </div>
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" formControlName='title' id="title" placeholder="Input Title">
+    <span class="text-danger" *ngIf="form?.controls?.title?.dirty && form && form?.controls?.title?.errors">
+      {{ form?.controls?.title?.errors?.required ? "This field is required" : "Name must less or equals than 30" }}
+    </span>
+  </div>
+  <div class="form-group">
+    <label for="author">Author</label>
+    <input type="text" class="form-control" formControlName='author' id="author" placeholder="Input Author">
+    <span class="text-danger" *ngIf="form?.controls?.author?.dirty && form && form?.controls?.author?.errors">
+      {{ form?.controls?.author?.errors?.required ? "This field is required" : "Name must less or equals than 30" }}
+    </span>
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input type="text" class="form-control" formControlName='description' id="description" placeholder="Input Description">
+    <span class="text-danger" *ngIf="form?.controls?.description?.dirty && form && form?.controls?.description?.errors">
+      {{ form?.controls?.description?.errors?.required ? "This field is required" : "Name must less or equals than 30" }}
+    </span>
+  </div>
+  <button class="btn btn-primary d-block mt-4" type="submit">Submit</button>
+</form>
+

@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Dolorem veniam duis",
+      "author": "Illum accusamus eos",
+      "description": "Commodi officiis in "
+    },
+    {
+      "id": "2",
+      "title": "Beatae consectetur ",
+      "author": "Tempor consequatur a",
+      "description": "Reiciendis debitis s"
+    },
+    {
+      "id": "3",
+      "title": "Quos sed ut adipisic",
+      "author": "Inventore minim temp",
+      "description": "Quo necessitatibus l"
+    }
+  ]
+}
